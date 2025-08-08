@@ -1,20 +1,21 @@
 export default function Footer() {
+  const baseUrl = import.meta.env.BASE_URL;
   return (
     <div className="bg-[var(--color-blue-950)] w-full flex px-20 py-10 items-start justify-between max-lg:flex-col max-lg:px-5 max-lg:py-10 max-lg:gap-5">
       <div className="w-1/2 flex gap-5 justify-between max-lg:flex-col max-lg:w-full max-lg:items-center">
         <div className="flex flex-col w-1/4 h-25 items-center justify-between max-lg:w-1/2 max-lg:h-20">
-          <img src="/images/logo-light.svg" alt="logo" className="w-50 object-cover" />
+          <img src={`${baseUrl}/images/logo-light.svg`} alt="logo" className="w-50 object-cover" />
 
           <div className="flex w-full items-center justify-between">
-            <img src="/images/icon-facebook.svg" alt="icon-facebook" className="w-5 h-auto object-cover" />
+            <img src={`${baseUrl}/images/icon-facebook.svg` }alt="icon-facebook" className="w-5 h-auto object-cover" />
 
-            <img src="/images/icon-youtube.svg" alt="icon-youtube" className="w-5 h-auto object-cover" />
+            <img src={`${baseUrl}/images/icon-youtube.svg`} alt="icon-youtube" className="w-5 h-auto object-cover" />
 
-            <img src="/images/icon-twitter.svg" alt="icon-twitter" className="w-5 h-auto object-cover" />
+            <img src={`${baseUrl}/images/icon-twitter.svg` }alt="icon-twitter" className="w-5 h-auto object-cover" />
 
-            <img src="/images/icon-pinterest.svg" alt="icon-pinterest" className="w-5 h-auto object-cover" />
+            <img src={`${baseUrl}/images/icon-pinterest.svg` }alt="icon-pinterest" className="w-5 h-auto object-cover" />
 
-            <img src="/images/icon-instagram.svg" alt="icon-instagram" className="w-5 h-auto object-cover" />
+            <img src={`${baseUrl}/images/icon-instagram.svg` }alt="icon-instagram" className="w-5 h-auto object-cover" />
           </div>
         </div>
         

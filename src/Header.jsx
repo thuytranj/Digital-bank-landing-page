@@ -60,7 +60,14 @@ export default function Nagv() {
         <button className="bg-gradient-to-tr from-[var(--color-cyan-400)] to-[var(--color-green-500)] px-4 py-2 rounded-[20px] bold text-sm cursor-pointer hover:opacity-70 transition-opacity 1s ease-in-out max-lg:hidden">Request invite</button>
 
         {/* Menu icon */}
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" className="lg:hidden" onClick={() => setOpen(prev => !prev)}><g fill="#2D314D" fillRule="evenodd"><path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z"/></g></svg>
+        {!isOpen &&
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="11" className="lg:hidden" onClick={() => setOpen(prev => !prev)}><g fill="#2D314D" fillRule="evenodd"><path d="M0 0h24v1H0zM0 5h24v1H0zM0 10h24v1H0z" /></g></svg>
+        }
+        
+        {/* Close button */}
+        {isOpen &&
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="19"><g fill="#2D314D" fillRule="evenodd" className="lg:hidden" onClick={() => setOpen(prev => !prev)}><path d="M.868.661l16.97 16.97-.706.708L.162 1.369z" /><path d="M.161 17.632L17.131.662l.708.706-16.97 16.97z" /></g></svg>
+        }
       </div>
 
       {/* Mobile menu overlay */}

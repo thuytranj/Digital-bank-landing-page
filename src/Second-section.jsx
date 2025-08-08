@@ -7,6 +7,7 @@ gsap.registerPlugin (ScrollTrigger)
 
 export default function SecondSection() {
   const scrollRef = useRef();
+  const baseUrl = import.meta.env.BASE_URL;
   
   useGSAP(() => {
     const boxes = gsap.utils.toArray(scrollRef.current.children)
@@ -34,25 +35,25 @@ export default function SecondSection() {
 
       <div className="flex items-start justify-between mt-5 w-full max-lg:flex-col max-lg:items-center max-lg:gap-5" ref={scrollRef}>
         <div className="flex flex-col gap-5 w-1/5 max-lg:w-full max-lg:items-center">
-          <img src="/images/icon-online.svg" alt="icon-online" className="w-15 h-auto object-cover" />
+          <img src={`${baseUrl}/images/icon-online.svg` }alt="icon-online" className="w-15 h-auto object-cover" />
           <p className="text-black text-3xl max-lg:text-center">Online Banking</p>
           <p className="text-[var(--color-gray-600)] max-lg:text-center">Our modern web and mobile applications allow you to keep track of your finances wherever you are in the world.</p>
         </div>
 
         <div className="flex flex-col gap-5 w-1/5 max-lg:w-full max-lg:items-center">
-          <img src="/images/icon-budgeting.svg" alt="icon-budgeting.svg" className="w-15 h-auto object-cover" />
+          <img src={`${baseUrl}/images/icon-budgeting.svg` }alt="icon-budgeting.svg" className="w-15 h-auto object-cover" />
           <p className="text-black text-3xl">Simple Budgeting</p>
           <p className="text-[var(--color-gray-600)] max-lg:text-center">See exactly where your money goes each month. Receive notifications where you're close to hitting your limits.</p>
         </div>
 
         <div className="flex flex-col gap-5 w-1/5 max-lg:w-full max-lg:items-center">
-          <img src="/images/icon-onboarding.svg" alt="icon-onboarding" className="w-15 h-auto object-cover" />
+          <img src={`${baseUrl}/images/icon-onboarding.svg` }alt="icon-onboarding" className="w-15 h-auto object-cover" />
           <p className="text-black text-3xl">Fast Onboarding</p>
           <p className="text-[var(--color-gray-600)] max-lg:text-center">We dont't do braches. Open your account in minutes online and start taking control of your finaces right away.</p>
         </div>
 
         <div className="flex flex-col gap-5 w-1/5 max-lg:w-full max-lg:items-center">
-          <img src="/images/icon-api.svg" alt="icon-api" className="w-15 h-auto object-cover" />
+          <img src={`${baseUrl}/images/icon-api.svg`} alt="icon-api" className="w-15 h-auto object-cover" />
           <p className="text-black text-3xl">Open API</p>
           <p className="text-[var(--color-gray-600)] max-lg:text-center">Manage your savings, investments, pension, and much more from one account. Tracking your money has never been easier.</p>
         </div>

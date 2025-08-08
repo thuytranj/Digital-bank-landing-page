@@ -7,6 +7,7 @@ gsap.registerPlugin(ScrollTrigger)
 
 export default function ThirdSection() {
   const scrollRef = useRef();
+  const baseUrl = import.meta.env.BASE_URL;
 
   useGSAP(() => {
     const boxes = gsap.utils.toArray(scrollRef.current.children)
@@ -32,7 +33,7 @@ export default function ThirdSection() {
 
       <div className="flex items-start justify-between w-full gap-4 max-lg:flex-col" ref={ scrollRef }>
       <div className="bg-white flex flex-col w-1/4 rounded-t-sm max-lg:w-full">
-        <img src="/images/image-currency.jpg" alt="image-currency" className="w-full rounded-t-sm h-60 object-cover" />
+        <img src={`${baseUrl}/images/image-currency.jpg` }alt="image-currency" className="w-full rounded-t-sm h-60 object-cover" />
 
         <div className="p-5 flex flex-col gap-2 items-start justify-between">
           <p className="text-[10px] text-[var(--color-gray-600)]">By Clare Robinson</p>
@@ -42,7 +43,7 @@ export default function ThirdSection() {
       </div>
 
       <div className="bg-white flex flex-col w-1/4 rounded-t-sm max-lg:w-full">
-        <img src="/images/image-restaurant.jpg" alt="image-restaurant" className="w-full rounded-t-sm h-60 object-cover" />
+        <img src={`${baseUrl}/images/image-restaurant.jpg` }alt="image-restaurant" className="w-full rounded-t-sm h-60 object-cover" />
 
         <div className="p-5 flex flex-col gap-2 items-start justify-between">
           <p className="text-[10px] text-[var(--color-gray-600)]">By Witson Hutton</p>
@@ -52,7 +53,7 @@ export default function ThirdSection() {
       </div>
 
       <div className="bg-white flex flex-col w-1/4 rounded-t-sm max-lg:w-full">
-        <img src="/images/image-plane.jpg" alt="image-plane" className="w-full rounded-t-sm h-60 object-cover" />
+        <img src={`${baseUrl}/images/image-plane.jpg`} alt="image-plane" className="w-full rounded-t-sm h-60 object-cover" />
 
         <div className="p-5 flex flex-col gap-2 items-start justify-between">
           <p className="text-[10px] text-[var(--color-gray-600)]">By Witson Hutton</p>
@@ -62,7 +63,7 @@ export default function ThirdSection() {
       </div>
 
       <div className="bg-white flex flex-col w-1/4 rounded-t-sm max-lg:w-full">
-        <img src="/images/image-confetti.jpg" alt="image-confetti" className="w-full rounded-t-sm h-60 object-cover" />
+        <img src={`${baseUrl}/images/image-confetti.jpg` }alt="image-confetti" className="w-full rounded-t-sm h-60 object-cover" />
 
         <div className="p-5 flex flex-col gap-2 items-start justify-between">
           <p className="text-[10px] text-[var(--color-gray-600)]">By Clare Robinson</p>
