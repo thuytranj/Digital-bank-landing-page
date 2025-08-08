@@ -22,12 +22,10 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](https://github.com/thuytranj/Digital-bank-landing-page/blob/9e60715b774ddf09fd1aa5ff10f9c7a27dab7f0e/design/desktop-design.jpg)
 
 ### Links
-
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [Click here](https://thuytranj.github.io/Digital-bank-landing-page/)
 
 ## My process
 
